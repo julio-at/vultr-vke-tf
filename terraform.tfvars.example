@@ -1,0 +1,32 @@
+# Región (slug): ewr, sjc, ams, fra, sgp, ...
+region       = "ewr"
+cluster_name = "vke-demo"
+
+# Versión EXACTA (ver slugs disponibles en el panel/API de Vultr)
+# Ejemplo real de la doc: v1.28.2+1
+kubernetes_version = "v1.28.2+1"
+
+# Plan/tamaño de nodo (slug):
+# Ejemplos: vc2-2c-4gb, vc2-4c-8gb, vdc-2c-4gb (según oferta al día)
+node_plan     = "vc2-2c-4gb"
+node_quantity = 3
+
+# Autoscaler del pool por defecto
+enable_autoscaler = false
+min_nodes         = 2
+max_nodes         = 6
+
+# Control plane HA y firewall gestionado (opcionales)
+ha_controlplanes        = false
+enable_firewall_managed = false
+
+# VPC: deja vpc_v4_subnet = "" para que Vultr asigne una subred automáticamente
+vpc_description   = "vpc for vke"
+vpc_v4_subnet     = ""       # ej. "10.20.0.0" si deseas definirla
+vpc_v4_subnet_mask = 16      # usado solo si vpc_v4_subnet != ""
+
+# Labels opcionales a nivel de node pool (se aplican como labels de K8s)
+node_labels = {
+  "role" = "system"
+}
+
