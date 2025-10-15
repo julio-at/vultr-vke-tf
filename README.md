@@ -2,9 +2,12 @@
 
 This project provisions a **Vultr VPC** and a **VKE cluster** using **Terraform only**. No external scripts, and the `.tf` files are written for clarity (no one-liners).
 
-> TL;DR: **Export `VULTR_API_KEY` → edit `terraform.tfvars` → `terraform init/plan/apply` → kubeconfig → `kubectl get nodes`.**
+## Clone this repo
 
----
+```
+https://github.com/julio-at/vultr-vke-tf.git
+cd vultr-vke-tf
+```
 
 ## 1) Project layout
 
