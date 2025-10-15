@@ -2,7 +2,7 @@
 
 This project provisions a **Vultr VPC** and a **VKE cluster** using **Terraform only**. No external scripts, and the `.tf` files are written for clarity (no one-liners).
 
-## Clone this repo
+## Clone this repository
 
 ```
 git clone https://github.com/julio-at/vultr-vke-tf.git
