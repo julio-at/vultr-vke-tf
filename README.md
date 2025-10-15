@@ -5,7 +5,7 @@ This project provisions a **Vultr VPC** and a **VKE cluster** using **Terraform 
 ## Clone this repo
 
 ```
-https://github.com/julio-at/vultr-vke-tf.git
+git clone https://github.com/julio-at/vultr-vke-tf.git
 cd vultr-vke-tf
 ```
 
